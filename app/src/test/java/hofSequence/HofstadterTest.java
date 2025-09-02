@@ -1,9 +1,11 @@
-package org.example;
+package hofSequence;
 
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Test;
+
 class HofstadterTest {
+
   @Test
   void itReturnsTheZerothElementInTheSequence() {
     Hofstadter h = new Hofstadter();

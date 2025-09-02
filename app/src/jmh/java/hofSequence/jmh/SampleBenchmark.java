@@ -1,11 +1,10 @@
-package org.example.jmh;
+package hofSequence.jmh;
 
-import org.example.Hofstadter;
-import org.openjdk.jmh.annotations.*;
-import org.openjdk.jmh.infra.Blackhole;
-import org.openjdk.jmh.annotations.Warmup;
-
+import hofSequence.Hofstadter;
 import java.util.concurrent.TimeUnit;
+import org.openjdk.jmh.annotations.*;
+import org.openjdk.jmh.annotations.Warmup;
+import org.openjdk.jmh.infra.Blackhole;
 
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
@@ -13,11 +12,12 @@ import java.util.concurrent.TimeUnit;
 @Fork(value = 1, warmups = 2)
 @Warmup(iterations = 2)
 public class SampleBenchmark {
+
   @Benchmark
   @Timeout(time = 5, timeUnit = TimeUnit.SECONDS)
   public void sayHelloBenchmark(Blackhole bh) {
-      Hofstadter hofstadter = new Hofstadter();
-      String output = hofstadter.gSequence(1);
-      bh.consume(output);
+    Hofstadter hofstadter = new Hofstadter();
+    int output = hofstadter.gSequence(1);
+    bh.consume(output);
   }
 }

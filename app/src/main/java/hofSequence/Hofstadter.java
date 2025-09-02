@@ -1,6 +1,7 @@
-package org.example;
+package hofSequence;
 
 public class Hofstadter {
+
   // Your implementations of the sequence goes here.
   // Recall that you can calculate the nth term, G(n), using:
   // G(n) = n - G(G(n-1))
