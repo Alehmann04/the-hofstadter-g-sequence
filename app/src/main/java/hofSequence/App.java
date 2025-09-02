@@ -3,7 +3,7 @@ package hofSequence;
 public class App {
 
   public static void main(String[] args) {
-    Hofstadter hofstadter = new Hofstadter();
-    System.out.println(hofstadter.gSequence(5));
+    ImprovedHofstadter hofstadter = new ImprovedHofstadter();
+    System.out.println(hofstadter.gSequence(50));
   }
 }
