@@ -9,7 +9,7 @@ class ImprovedHofstadterTest {
   ImprovedHofstadter hofstadter = new ImprovedHofstadter();
 
   // from https://oeis.org/A005206
-  int[] first100 = {
+  int[] first79 = {
     0,
     1,
     1,
@@ -93,11 +93,9 @@ class ImprovedHofstadterTest {
   void itReturnsTheZerothElementInTheSequence() {
     int result = this.hofstadter.gSequence(0);
     try {
-      assertEquals(first100[0], result);
+      assertEquals(first79[0], result);
     } catch (java.lang.AssertionError error) {
-      System.out.println(
-        "Calculated: " + result + "  Expected: " + first100[0]
-      );
+      System.out.println("Calculated: " + result + "  Expected: " + first79[0]);
     }
   }
 
@@ -105,11 +103,9 @@ class ImprovedHofstadterTest {
   void itReturnsTheTenthElementInTheSequence() {
     int result = this.hofstadter.gSequence(10);
     try {
-      assertEquals(first100[9], result);
+      assertEquals(first79[9], result);
     } catch (java.lang.AssertionError error) {
-      System.out.println(
-        "Calculated: " + result + "  Expected: " + first100[9]
-      );
+      System.out.println("Calculated: " + result + "  Expected: " + first79[9]);
     }
   }
 
@@ -117,10 +113,10 @@ class ImprovedHofstadterTest {
   void itReturnsTheTwentiethElementInTheSequence() {
     int result = this.hofstadter.gSequence(20);
     try {
-      assertEquals(first100[19], result);
+      assertEquals(first79[19], result);
     } catch (java.lang.AssertionError error) {
       System.out.println(
-        "Calculated: " + result + "  Expected: " + first100[19]
+        "Calculated: " + result + "  Expected: " + first79[19]
       );
     }
   }
@@ -129,10 +125,10 @@ class ImprovedHofstadterTest {
   void itReturnsTheThirtiethElementInTheSequence() {
     int result = this.hofstadter.gSequence(30);
     try {
-      assertEquals(first100[29], result);
+      assertEquals(first79[29], result);
     } catch (java.lang.AssertionError error) {
       System.out.println(
-        "Calculated: " + result + "  Expected: " + first100[29]
+        "Calculated: " + result + "  Expected: " + first79[29]
       );
     }
   }
@@ -141,10 +137,10 @@ class ImprovedHofstadterTest {
   void itReturnsTheFourtiethElementInTheSequence() {
     int result = this.hofstadter.gSequence(40);
     try {
-      assertEquals(first100[39], result);
+      assertEquals(first79[39], result);
     } catch (java.lang.AssertionError error) {
       System.out.println(
-        "Calculated: " + result + "  Expected: " + first100[39]
+        "Calculated: " + result + "  Expected: " + first79[39]
       );
     }
   }
@@ -153,10 +149,10 @@ class ImprovedHofstadterTest {
   void itReturnsTheFiftiethElementInTheSequence() {
     int result = this.hofstadter.gSequence(50);
     try {
-      assertEquals(first100[49], result);
+      assertEquals(first79[49], result);
     } catch (java.lang.AssertionError error) {
       System.out.println(
-        "Calculated: " + result + "  Expected: " + first100[49]
+        "Calculated: " + result + "  Expected: " + first79[49]
       );
     }
   }
